@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Idea Box</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+<body>
+  <section class="section titleSection">
+    <div class="container has-text-centered">
+       <div class="columns">
+         <div class="column has-text-centered">
+            <h1 class="title">Idea Box</h1>
+            <p class="subtitle">Collection of Project Ideas</p>
+         </div>
+       </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-multiline content">
+
+      </div>
+    </div>  
+  </section>
+
+  <!-- content modal -->
+  <div class="modal contentModal">
+    <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box contentBox">
+          <h3 class="title has-text-centered" id="itemTitle"></h3>
+          <hr>
+          <p id="itemTags" class="subtitle"></p>
+          <p id="itemDescription"></p>
+        </div>
+      </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+
+  <!-- input form -->
+  <div class="modal" id="formHolder">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="box has-text-info" id="formHolderBox">
+            <p class="title ">Add a new idea</p>
+                <form action="#" method="post">
+                 <div class="columns">
+                   <div class="column">
+                    <div class="field">
+                      <div class="control">
+                        <input class="input" type="text" name="title" id="title" placeholder="Title for Idea">
+                      </div>
+                    </div>
+                   </div>
+                 </div>
+
+                 <div class="columns">
+                   <div class="column">
+                    <div class="field">
+                      <div class="control">
+                        <input class="input" type="text" id="subtitle" placeholder="Give a very short description........">
+                      </div>
+                    </div>
+                   </div>
+                 </div>
+
+                <div class="columns">
+                  <div class="column">
+                    <div class="field">
+                      <div class="control">
+                        <textarea id="description" class="textarea" rows="20" placeholder="Detailed Description"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+
+                <div class="columns">
+                  <div class="column">
+                    <div class="field">
+                      <div class="control">
+                        <input class="input" type="text" name="tags" id="tags" placeholder="Add some tags; use , after each one">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="columns">
+                  <div class="column has-text-centered">
+                    <button type="submit" id="submitButton" class="button is-fullwidth is-info">Add idea</button>
+                  </div>
+                </div>
+
+
+                </form>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  
+  <script src="js/script.js"></script>
+  </body>
+</html>

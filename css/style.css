@@ -1,0 +1,58 @@
+.titleSection
+{
+    padding: 1.2rem 1.5rem;
+}
+
+.title
+{
+    color: inherit !important;
+}
+
+.box
+{
+    border: 1px solid black;
+    min-height: 240px;
+    max-height: 240px;
+    overflow: hidden;
+    
+    
+}
+
+.contentBox
+{
+    max-height: initial;
+}
+
+.itemBox:hover
+{
+    background-color: black;
+    color: white !important;
+}
+
+#formHolderBox
+{
+    min-height: initial;
+    max-height: initial;
+}
+
+.description
+{
+    text-overflow: ellipsis;
+}
+
+#itemDescription
+{
+    padding-bottom: 2rem;
+}
+
+#itemTags
+{
+    padding-top: 0.01vh;
+    font-size: .8rem;
+    text-align: center;
+}
+
+hr
+{
+    margin: .5rem 0;
+}
